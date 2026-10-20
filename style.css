@@ -1,0 +1,113 @@
+
+/* Main page */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 55px 30px;
+  background: #101f33;
+  color: #e7eef6;
+  line-height: 1.7;
+}
+
+/* Main title */
+h1 {
+  font-size: clamp(36px, 5vw, 60px);
+  line-height: 1.15;
+  color: #ffffff;
+  letter-spacing: -2px;
+  max-width: 850px;
+  margin-bottom: 15px;
+}
+
+/* Section headings */
+h2 {
+  font-size: 25px;
+  color: #63d6c0;
+  margin-top: 45px;
+  margin-bottom: 15px;
+}
+
+/* Paragraphs */
+p {
+  font-size: 16px;
+  color: #c1d0df;
+  max-width: 850px;
+  line-height: 1.9;
+}
+
+/* Data table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+  background: #ffffff;
+  color: #172b40;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* Table headings */
+th {
+  background: #20354d;
+  color: #ffffff;
+  padding: 20px 16px;
+  text-align: left;
+  font-size: 14px;
+}
+
+/* Table data */
+td {
+  padding: 18px 16px;
+  border-bottom: 1px solid #e4ebf1;
+  font-size: 15px;
+}
+
+/* Alternate row colors */
+tbody tr:nth-child(even) {
+  background: #f2f7fa;
+}
+
+/* Highlight rows */
+tbody tr:hover {
+  background: #d9f3ef;
+  transition: background 0.2s ease;
+}
+
+/* Highlight region names */
+td:first-child {
+  font-weight: bold;
+  color: #176b73;
+}
+
+/* Links */
+a {
+  color: #63d6c0;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+/* Mobile layout */
+@media (max-width: 700px) {
+  body {
+    padding: 30px 15px;
+  }
+
+  h1 {
+    letter-spacing: -1px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  th, td {
+    padding: 12px;
+    white-space: nowrap;
+  }
+}
